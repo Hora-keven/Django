@@ -1,10 +1,8 @@
 
 from django.urls import path
 from django.http import HttpResponse
-from recipes.views import contato, myview, sobre
+from recipes.views import contato
 
 urlpatterns = [
-    path('', myview),
-    path('sobre/', sobre),
     path('contato/', contato),
 ]
