@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 def contato(request):
     return render(request, 'home.html', context={
-        'name':'Keven da Hora'})
+        'name':'Saborosas'})
