@@ -15,6 +15,7 @@
             padding: 0;
             margin: 0;
             width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         h1{
             font-size: 2rem;
@@ -51,20 +52,58 @@
             justify-content: center;
             align-items: center;
         }
-       
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 5%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: rgb(72, 102, 102);
+            width: auto;
+            height: 90%;
+            margin: 4%;
+            text-align: center;
+
+        }
+       h3{
+            color: #ffffff;
+       }
+       a{
+        text-decoration: none;
+       }
     </style>
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <h1>Receitas {{name}}</h1>
-        </div>
-    </header>
+   {% extends './partials/partial.html' %}
     <div class="container">
        <section>
         <input type="text" >
+        <a href="">Busca</a>
        </section>
+       <section class="cards">
+        <div class="card">
+            <h3>Pratos quentes</h3>
+        </div>
+        <div class="card">
+            <h3>Pratos Frios</h3>
+        </div>
+        <div class="card">
+            <h3>Comida baiana</h3>
+        </div>
+        <div class="card">
+            <h3>Comida paulista</h3>
+        </div>
+        <div class="card">
+            <h3>Comida Sulista</h3>
+        </div>
+        <div class="card">
+            <h3>Comida nortista</h3>
+        </div>
+      </section>
     </div>
  
 </body>
