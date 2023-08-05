@@ -66,6 +66,8 @@
             height: 90%;
             margin: 4%;
             text-align: center;
+            align-items: center;
+            justify-content: center;
 
         }
        h3{
@@ -74,11 +76,19 @@
        a{
         text-decoration: none;
        }
+       .image{
+        width: 90%;
+        margin-left: 5%;
+       
+       }
+       img{
+        width: 100%;
+       }
     </style>
 </head>
 
 <body>
-   {% extends './partials/partial.html' %}
+     {% include  './partials/partial.html' %} 
     <div class="container">
        <section>
         <input type="text" >
@@ -87,21 +97,39 @@
        <section class="cards">
         <div class="card">
             <h3>Pratos quentes</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
         <div class="card">
             <h3>Pratos Frios</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
         <div class="card">
             <h3>Comida baiana</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
         <div class="card">
             <h3>Comida paulista</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
         <div class="card">
             <h3>Comida Sulista</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
         <div class="card">
             <h3>Comida nortista</h3>
+            <div class="image">
+                <img src="https://s2.glbimg.com/UwMydbXA7fy3SXZx-mj8rfi6IVk=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/07/26/receita-yakisoba-camarao.png" alt="">
+            </div>
         </div>
       </section>
     </div>
