@@ -54,7 +54,7 @@ section{
 }
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 5%;
     height: 50%;
     justify-content: center;
@@ -71,6 +71,9 @@ section{
     justify-content: center;
     border-radius: 10px;
 
+}
+.card:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 h3{
     color: #000000;
@@ -93,13 +96,13 @@ img{
     
 }
 .icon{
-    width: 2%;
-    margin-left: 36%;
+    width: 3.5%;
+    margin-left: 27%;
     position: relative;
     top: 30px;
 }
 .icon2{
-    width: 2%;
+    width: 3.5%;
     margin-left: 49%;
     position: relative;
     bottom:24px;
@@ -108,5 +111,5 @@ img{
 .date{
     position: relative;
     bottom:51px;
-    margin-left: 33%;
+    margin-left: 65%;
 }
