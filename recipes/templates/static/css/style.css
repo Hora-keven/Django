@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+  
 }
 body{
     padding: 0;
@@ -55,25 +55,26 @@ section{
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-top: 5%;
-    height: 50%;
+    margin-left: 7%;
+    height: 97%;
     justify-content: center;
     align-items: center;
     
 }
 .card{
     background-color: rgb(255, 255, 255);
-    width: auto;
-    height: 90%;
-    margin: 4%;
+    width: 77%;
+    height: 60vh;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-
+    margin-bottom: 15%;
 }
 .card:hover{
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scaleX(1), scaleY(1);
 }
 h3{
     color: #000000;
@@ -97,13 +98,13 @@ img{
 }
 .icon{
     width: 3.5%;
-    margin-left: 27%;
+    margin-left: 22%;
     position: relative;
-    top: 30px;
+    top: 28px;
 }
 .icon2{
     width: 3.5%;
-    margin-left: 49%;
+    margin-left: 52%;
     position: relative;
     bottom:24px;
 
@@ -111,5 +112,6 @@ img{
 .date{
     position: relative;
     bottom:51px;
-    margin-left: 65%;
+    margin-left: 70%;
 }
+
