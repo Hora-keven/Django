@@ -73,6 +73,7 @@ section{
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 15%;
+    box-shadow:3px 3px 3px 3px black;
 }
 .card:hover{
     transform: scaleX(1), scaleY(1);
