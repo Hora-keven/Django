@@ -1,10 +1,10 @@
 
 
-function Tudo() {
+function Data() {
  
     const data = new Date()
-    let diadasemana = data.getDay()
 
+    
     function zeroEsquerda(num) {
         return num >= 10 ? num : `0${num}`
     }
@@ -15,7 +15,7 @@ function Tudo() {
     }
     
     function getMonth(data){
-        const month = zeroEsquerda(data.getMonth())
+        const month = zeroEsquerda(data.getMonth()+1)
         return month
     }
 
@@ -23,6 +23,11 @@ function Tudo() {
         const year = zeroEsquerda(data.getFullYear())
         return year
     }
-    document.querySelector('.date').innerHTML = `<p>${getDay(data)}/${getMonth(data)}/${getYear(data)}</p>`
+    const documento = document.querySelectorAll('.date')
+    
+    documento.forEach((date, num) =>{
+        date.innerHTML = `<p>${getDay(data)}/${getMonth(data)}/${getYear(data)}</p>`
+    })
+
 }
-Tudo()
+Data()
