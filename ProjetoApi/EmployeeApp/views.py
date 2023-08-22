@@ -7,9 +7,9 @@ from EmployeeApp.models import Departments,Employee
 from EmployeeApp.serializers import DepartmentSerializer, EmployeeSerializer
 
 @csrf_exempt
-def departmentApi(request, id=0):
+def departmentApi(request, id):
     if request.method == 'GET':
-        departments = Departments.objects.all()
+        departments = Departments.objects.filter(DepartmentId__icontains=id)
         departments_serializer = DepartmentSerializer(departments, many=True)
         return JsonResponse(departments_serializer.data, safe=False)
     

@@ -5,6 +5,9 @@ class Departments(models.Model):
     DepartmentId = models.AutoField(primary_key=True)
     DepartmentName = models.CharField(max_length=500)
 
+    def __str__(self) -> str:
+        return self.DepartmentId
+
 class Employee(models.Model):
    EmployeeId = models.AutoField(primary_key=True)
    EmployeeName = models.CharField(max_length=500)
