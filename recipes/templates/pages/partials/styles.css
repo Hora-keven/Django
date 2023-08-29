@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-  
+
 }
 body{
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    display: flex;
 }
 h1{
     font-size: 4rem;
@@ -35,9 +35,8 @@ p{
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size: 2ch;
-    right: 130px;
-    top:6px;
+    font-size: 3ch;
+    right: 65px;
     position: relative;
     color: #969696;
 }
@@ -55,28 +54,23 @@ section{
 }
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 5%;
-    margin-left: 7%;
-    height: 97%;
+    height: 50%;
     justify-content: center;
     align-items: center;
     
 }
 .card{
     background-color: rgb(255, 255, 255);
-    width: 77%;
-    height: 60vh;
+    width: auto;
+    height: 90%;
+    margin: 4%;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: 15%;
-    box-shadow:3px 3px 3px 3px black;
-}
-.card:hover{
-    transform: scaleX(1), scaleY(1);
+
 }
 h3{
     color: #000000;
@@ -96,82 +90,24 @@ a{
 }
 img{
     width: 100%;
-    height: 100%;
     
 }
 .icon{
-    width: 3.5%;
-    left:10px;
+    width: 2%;
+    margin-left: 36%;
     position: relative;
-    top: 26.5px;
+    top: 30px;
 }
 .icon2{
-    width: 3.5%;
-    left: 104px;
+    width: 2%;
+    margin-left: 49%;
     position: relative;
-    bottom:14px;
+    bottom:24px;
 
 }
-.icon3{
-    width: 3.5%;
+.date{
     position: relative;
     bottom:51px;
-    left:230px;
-}
-.date {
-    position: relative;
-    bottom:41px;
-    color: #000;
-    margin-left: 60%;
-}
-.foodIcon{
-    position: relative;
-    bottom:23px;
-    margin-left:19px;
-    font-size: 2ch;
-    color: #969696;
+    margin-left: 33%;
 }
 
-.information{
-    justify-content:center;
-    align-items:center;
-}
-.text{
-    font-size: 2ch;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 10%;
-}
-.infoIcons{
-    background-color:'gray';
-    align-items:center;
-    margin-left:20%;
-
-}
-.mainfooter{
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000;
-    display: flex;
-    padding: var(--spacing-gutter-large);
-}
-.mainfooter a{
-    background-color: #000;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 4em;
-    transition: 1s;
-}
-.mainfooter a:hover{
-    color: rgb(85, 85, 85);
-    transition: 1s;
-    
-}
-.button{
-    width: 40%;
-    padding: 0.33%;
-    color: #000;
-    border-radius: 10px;
-    background-color: rgb(138, 138, 138);
-    
-}

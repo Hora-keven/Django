@@ -1,8 +1,9 @@
 
 from django.urls import path
 from django.http import HttpResponse
-from recipes.views import contato
+from . import views
 
 urlpatterns = [
-    path('', contato),
+    path('', views.contato),
+    path('recipes/<int:id>/', views.recipe),
 ]
