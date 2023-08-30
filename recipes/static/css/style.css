@@ -84,9 +84,9 @@ h3{
 }
 a{
     text-decoration: none;
-    background-color: rgb(138, 138, 138);
+   
     padding: 0.33%;
-    color: #000;
+    color: #ffffff;
     border-radius: 10px;
 }
 .image{
@@ -174,5 +174,33 @@ img{
     border-radius: 10px;
     background-color: rgb(138, 138, 138);
     
+}
+.cardsRecipe{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.cardRecipe{
+    margin-top: 15%;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height:162vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px 3px black;
+    margin-bottom:15%;
+   
+}
+.cardRecipe a{
+    text-decoration: double;
+}
+.imageRecipe{
+    width: 100%;
+    height: 35%;
+    border-radius: 10px;
 }
 
