@@ -1,11 +1,15 @@
+
+{% load static %}
+
+
 <div class="card">
   <div class="image">
     <img
-      src="https://swiftbr.vteximg.com.br/arquivos/pappardelle-de-costela-618614-2.png?v=638101768874870000"
+      src="{{recipe.cover.url}}"
       alt=""
     />
   </div>
-  <h3>Comida Mineira</h3>
+  <h3>{{recipe.title}}</h3>
   <div class="information">
     <div class="infoIcons">
       <div class="icon">
@@ -14,7 +18,7 @@
           alt=""
         />
       </div>
-      <p>Keven</p>
+      <p>{{recipe.author.first_name}}</p>
       <div class="icon2">
         <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
       </div>
@@ -28,11 +32,14 @@
       </div>
     </div>
     <div class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit
-      itaque possimus aliquid vitae blanditiis sed excepturi quidem aspernatur,
-      expedita necessitatibus magnam quas omnis quo pariatur ut id, nostrum
-      voluptatem.
+     {{recipe.description}}
     </div>
-    <a class="mais" href=""><Button class="button" >ver mais</Button></a>
-  </div>
+    {% if is_detail_page is not True  %}
+        <a class="mais" href="recipe"><Button class="button" >ver mais</Button></a>
+    
+      {% endif %}
+
+   
+    </div>
+
 </div>
