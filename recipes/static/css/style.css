@@ -36,7 +36,7 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 2ch;
-    right: 130px;
+    right: 148px;
     top:8px;
     position: relative;
     color: #969696;
@@ -58,10 +58,11 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 5%;
-    margin-left: 7%;
+    margin-left:90px;
     height: 97%;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 .card{
@@ -107,7 +108,7 @@ img{
 }
 .icon2{
     width: 3.5%;
-    left: 100px;
+    left: 125px;
     position: relative;
     bottom:14px;
 
@@ -116,13 +117,13 @@ img{
     width: 3.5%;
     position: relative;
     bottom:51px;
-    margin-left:230px;
+    left:260px;
 }
 .date {
     position: relative;
     bottom:41px;
     color: #000;
-    margin-left: 64%;
+    left: 43%;
 }
 .foodIcon{
     position: relative;
@@ -143,9 +144,8 @@ img{
     margin-bottom: 10%;
 }
 .infoIcons{
-    background-color:'gray';
-    align-items:center;
     margin-left:20%;
+    
 
 }
 .mainfooter{
@@ -183,7 +183,7 @@ img{
  
 }
 .cardRecipe{
-    margin-top: 15%;
+    margin-top: 5%;
     background-color: rgb(255, 255, 255);
     width: 45%;
     height:162vh;
@@ -192,7 +192,7 @@ img{
     justify-content: center;
     border-radius: 10px;
     box-shadow:3px 3px 3px 3px black;
-    margin-bottom:15%;
+    margin-bottom:5%;
    
 }
 .cardRecipe a{
@@ -202,5 +202,41 @@ img{
     width: 100%;
     height: 35%;
     border-radius: 10px;
+}
+.cardRecipe #icon{
+    width:3.5%;
+    top: 30px;
+    position: relative;
+}
+.cardRecipe #icon2{
+    width:3.5%;
+    left: 200px;
+    position: relative;
+    bottom: 20px;
+}
+
+.cardRecipe #icon3{
+    width:3.5%;
+    position: relative;
+    left: 400px;
+    bottom: 70px;
+}
+.cardRecipe p{
+    position: relative;
+    right: 260px;  
+    
+}
+.cardRecipe .infoIcons{
+    margin-left:170px;
+}
+.cardRecipe .date{
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+.cardRecipe #foodIcon{
+    position: relative;
+    bottom: 25px;
+    left: 40px;
 }
 

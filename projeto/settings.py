@@ -120,9 +120,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'recipes/static/css'
+    BASE_DIR / 'recipes/static/css'
 ]
-
+STATIC_ROOT = BASE_DIR / 'STATIC'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

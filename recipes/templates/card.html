@@ -51,23 +51,23 @@
         <a  href='{% url "recipes:recipe" recipe.id %}'><h3>{{recipe.title}}</h3></a>
         <div class="information">
           <div class="infoIcons">
-            <div class="icon">
+            <div id="icon">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png"
                 alt=""
               />
             </div>
             <p>{{recipe.author.first_name}}</p>
-            <div class="icon">
+            <div id="icon2">
               <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
             </div>
             <div class="date"></div>
-            <div class="icon">
+            <div id="icon3">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/599/599995.png"
                 alt=""
               />
-              <div class="foodIcon">Pizza</div>
+              <div id="foodIcon">Pizza</div>
             </div>
           </div>
           <div class="text">
