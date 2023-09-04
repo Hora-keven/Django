@@ -38,7 +38,7 @@
 
     <div class="cardRecipe">
       <div class="imageRecipe">
-        <img src="{{ recipe.cover.url }}" alt="" />
+        <img src={{ recipe.cover.url }} alt="" />
       </div>
         <h3>{{recipes.title}}</h3>
       </a>
@@ -47,11 +47,9 @@
           <div id="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png" alt="" />
           </div>
-
-
           <p>
             {% if recipe.author.first_name %}
-            {{recipe.author.first_name}} {{recipe.author.last_name}}
+            {{recipe.author.first_name }} {{recipe.author.last_name}}
           {% else %}
             {{ recipe.author.username }}
           {% endif %}
@@ -66,7 +64,7 @@
           </div>
         </div>
         <div class="text">
-          {{recipe.description}}
+          {{ recipe.description }}
         </div>
 
         {% endif %}
