@@ -1,5 +1,5 @@
 
-
+/*
 function Data() {
  
     const data = new Date()
@@ -30,4 +30,4 @@ function Data() {
     })
 
 }
-Data()
+Data()*/

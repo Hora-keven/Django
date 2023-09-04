@@ -1,82 +1,77 @@
-
 {% load static %}
 
-{% if is_detail_page is not True  %}
+{% if is_detail_page is not True %}
 
 <div class="card">
   <div class="image">
-    <img
-      src="{{recipe.cover.url}}"
-      alt=""
-    />
+    <img src="{{recipe.cover.url}}" alt="" />
   </div>
   <h3>{{recipe.title}}</h3>
   <div class="information">
     <div class="infoIcons">
       <div class="icon">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png"
-          alt=""
-        />
+        <img src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png" alt="" />
       </div>
-      <p>{{recipe.author.first_name}}</p>
+      <p>
+        {% if recipe.author.first_name %}
+          {{recipe.author.first_name}} {{recipe.author.last_name}}
+        {% else %}
+          {{ recipe.author.username }}
+        {% endif %}</p>
       <div class="icon2">
         <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
       </div>
-      <div class="date"></div>
+      <div class="date">{{recipe.create_at|date:"d/m/y"}} </div>
       <div class="icon3">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/599/599995.png"
-          alt=""
-        />
-        <div class="foodIcon">Pizza</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/599/599995.png" alt="" />
+        <div class="foodIcon"><a id="category" href="{% url 'recipes:category' recipe.category.id %}">{{recipe.category}}</a></div>
       </div>
     </div>
     <div class="text">
-     {{recipe.description}}
+      {{recipe.description}}
     </div>
-    <a class="mais" href='{% url "recipes:recipe" recipe.id %}'><Button class="button" >ver mais</Button></a>
-   
-      
-      {% endif %}
-      {% if is_detail_page is True%}
-            
-      <div class="cardRecipe">
-        <div class="imageRecipe">
-          <img
-            src="{{recipe.cover.url}}"
-            alt=""
-          />
-        </div>
-        <a  href='{% url "recipes:recipe" recipe.id %}'><h3>{{recipe.title}}</h3></a>
-        <div class="information">
-          <div class="infoIcons">
-            <div id="icon">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png"
-                alt=""
-              />
-            </div>
-            <p>{{recipe.author.first_name}}</p>
-            <div id="icon2">
-              <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
-            </div>
-            <div class="date"></div>
-            <div id="icon3">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/599/599995.png"
-                alt=""
-              />
-              <div id="foodIcon">Pizza</div>
-            </div>
-          </div>
-          <div class="text">
-              {{recipe.preparation_steps}}
-          </div>
-      
-      {%endif%}
-   
-   
-    </div>
+    <a class="mais" href='{% url "recipes:recipe" recipe.id %}'><Button class="button">ver mais</Button></a>
 
-</div>
+
+    {% endif %}
+    {% if is_detail_page is True %}
+
+    <div class="cardRecipe">
+      <div class="imageRecipe">
+        <img src="{{ recipe.cover.url }}" alt="" />
+      </div>
+        <h3>{{recipes.title}}</h3>
+      </a>
+      <div class="information">
+        <div class="infoIcons">
+          <div id="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png" alt="" />
+          </div>
+
+
+          <p>
+            {% if recipe.author.first_name %}
+            {{recipe.author.first_name}} {{recipe.author.last_name}}
+          {% else %}
+            {{ recipe.author.username }}
+          {% endif %}
+          </p>
+          <div id="icon2">
+            <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
+          </div>
+          <div class="date">{{recipe.create_at|date:'d/m/y'}}</div>
+          <div id="icon3">
+            <img src="https://cdn-icons-png.flaticon.com/512/599/599995.png" alt="" />
+            <div id="foodIcon">Pizza</div>
+          </div>
+        </div>
+        <div class="text">
+          {{recipe.description}}
+        </div>
+
+        {% endif %}
+
+
+      </div>
+
+    </div>

@@ -121,9 +121,10 @@ img{
 }
 .date {
     position: relative;
-    bottom:41px;
+    bottom:34px;
     color: #000;
-    left: 43%;
+    color: #969696;
+
 }
 .foodIcon{
     position: relative;
@@ -185,8 +186,8 @@ img{
 .cardRecipe{
     margin-top: 5%;
     background-color: rgb(255, 255, 255);
-    width: 45%;
-    height:162vh;
+    width: 35%;
+    height:62vh;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -239,4 +240,6 @@ img{
     bottom: 25px;
     left: 40px;
 }
-
+#category{
+    color: #969696;
+}
