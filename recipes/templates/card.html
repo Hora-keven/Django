@@ -9,33 +9,61 @@
   <h3>{{recipe.title}}</h3>
   <div class="information">
     <div class="infoIcons">
+      {% if recipe.author is not None %}
       <div class="icon">
         <img src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png" alt="" />
       </div>
       <p>
         {% if recipe.author.first_name %}
-          {{recipe.author.first_name}} {{recipe.author.last_name}}
+            {{recipe.author.first_name}} {{recipe.author.last_name}}
+
         {% else %}
-          {{ recipe.author.username }}
-        {% endif %}</p>
+            {{ recipe.author.username }}
+        {% endif %}
+      </p>
+      {% endif %}
       <div class="icon2">
         <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
       </div>
       <div class="date">{{recipe.create_at|date:"d/m/y"}} </div>
       <div class="icon3">
         <img src="https://cdn-icons-png.flaticon.com/512/599/599995.png" alt="" />
-        <div class="foodIcon"><a id="category" href="{% url 'recipes:category' recipe.category.id %}">{{recipe.category}}</a></div>
+        <div class="foodIcon"><a id="category"
+            href="{% url 'recipes:category' recipe.category.id %}">{{recipe.category}}</a></div>
       </div>
     </div>
     <div class="text">
       {{recipe.description}}
     </div>
     <a class="mais" href='{% url "recipes:recipe" recipe.id %}'><Button class="button">ver mais</Button></a>
+  </div>
+  </div>
+  {% endif %}
 
 
-    {% endif %}
-    {% if is_detail_page is True %}
+{% if is_detail_page is True %}
 
+<<<<<<< HEAD
+  {% for recipe in recipe %}
+  <div class="cardRecipe">
+    <div class="imageRecipe">
+      <img src="{{ recipe.cover.url }}" alt="" />
+    </div>
+    <h3>{{recipe.title}}</h3>
+    </a>
+    <div class="information">
+      <div class="infoIcons">
+
+        {% if recipe.author is not None %}
+        <div id="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/4211/4211178.png" alt="" />
+        </div>
+
+
+        <p>
+          {% if recipe.author.first_name %}
+          {{recipe.author.first_name}} {{recipe.author.last_name}}
+=======
     <div class="cardRecipe">
       <div class="imageRecipe">
         <img src={{ recipe.cover.url }} alt="" />
@@ -50,26 +78,31 @@
           <p>
             {% if recipe.author.first_name %}
             {{recipe.author.first_name }} {{recipe.author.last_name}}
+>>>>>>> 8391ebeaba93e3a5f753998af749dfc2268e058f
           {% else %}
-            {{ recipe.author.username }}
+          {{ recipe.author.username }}
           {% endif %}
-          </p>
-          <div id="icon2">
-            <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
-          </div>
-          <div class="date">{{recipe.create_at|date:'d/m/y'}}</div>
-          <div id="icon3">
-            <img src="https://cdn-icons-png.flaticon.com/512/599/599995.png" alt="" />
-            <div id="foodIcon">Pizza</div>
-          </div>
+          {% endif %}
+        </p>
+        <div id="icon2">
+          <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="" />
         </div>
+<<<<<<< HEAD
+        <div class="date">{{recipe.create_at|date:'d/m/y'}}</div>
+        <div id="icon3">
+          <img src="https://cdn-icons-png.flaticon.com/512/599/599995.png" alt="" />
+=======
         <div class="text">
           {{ recipe.description }}
+>>>>>>> 8391ebeaba93e3a5f753998af749dfc2268e058f
         </div>
-
-        {% endif %}
-
-
+        <div id="foodIcon" style="color: gray;">Pizza</div>
       </div>
-
+      <div class="text">
+        {{recipe.description}}
+      </div>
     </div>
+  </div>
+{% endfor %}
+{% endif %}
+

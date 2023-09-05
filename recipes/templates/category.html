@@ -7,21 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href='{% static './css/style.css' %}' />
-  <title>{{title}}</title>
+  <title>
+      Recipe
+  </title>
 </head>
 
 <body>
   {% include 'partial.html' %}
   <div class="container">
     <section>
-      <input type="text" />
-      <a href="">Busca</a>
-    </section>
-
+        {% for ct in category %}
+        <h1>{{ct}}</h1>
+        <div style="height: 50%;">
+            <img src="{{ ct.cover.url }}" alt="" />
+          </div>
+          {% endfor %}
     <section class="cards">
       {% for recipe in recipes %}
         {% include 'card.html'%}
       {% endfor %}
+    
     
     </section>
    {% include 'rodape.html' %}

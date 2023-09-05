@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
-  
+
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
 }
-h1{
+
+h1 {
     font-size: 4rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    
+
 }
-header{
+
+header {
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: #ffffff;
@@ -25,23 +28,26 @@ header{
     text-align: center;
 
 }
-.container{
+
+.container {
     height: 100%;
     width: 100%;
     background-color: rgb(240, 240, 240);
 }
-p{
+
+p {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 2ch;
     right: 148px;
-    top:8px;
+    top: 8px;
     position: relative;
     color: #969696;
 }
-input{
+
+input {
     width: 30vw;
     margin-top: 3rem;
     margin-left: 35%;
@@ -49,23 +55,22 @@ input{
     border: 0;
     border-radius: 10px;
 }
-section{
-    justify-content: center;
-    align-items: center;
-}
-.cards{
+
+
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 5%;
-    margin-left:90px;
+    margin-left: 90px;
     height: 97%;
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
 }
-.card{
+
+.card {
     background-color: rgb(255, 255, 255);
     width: 77%;
     height: 65vh;
@@ -74,173 +79,206 @@ section{
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 15%;
-    box-shadow:3px 3px 3px 3px black;
+    box-shadow: 3px 3px 3px 3px black;
 }
-.card:hover{
+
+.card:hover {
     transform: scaleX(1), scaleY(1);
 }
-h3{
+
+h3 {
     color: #000000;
     font-size: 3ch;
 }
-a{
+
+a {
     text-decoration: none;
-   
+
     padding: 0.33%;
     color: #ffffff;
     border-radius: 10px;
 }
-.image{
+
+.image {
     width: 100%;
     border-radius: 10px;
-    
+
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
-    
+
 }
-.icon{
+
+.icon {
     width: 3.5%;
-    right:20px;
+    right: 20px;
     position: relative;
     top: 26.5px;
 }
-.icon2{
+
+.icon2 {
     width: 3.5%;
     left: 125px;
     position: relative;
-    bottom:14px;
+    bottom: 14px;
 
 }
-.icon3{
+
+.icon3 {
     width: 3.5%;
     position: relative;
-    bottom:51px;
-    left:260px;
+    bottom: 51px;
+    left: 260px;
 }
+
 .date {
     position: relative;
-    bottom:34px;
+    bottom: 34px;
     color: #000;
     color: #969696;
 
 }
-.foodIcon{
+
+.foodIcon {
     position: relative;
-    bottom:23px;
-    margin-left:19px;
+    bottom: 23px;
+    margin-left: 19px;
     font-size: 2ch;
     color: #969696;
 }
 
-.information{
-    justify-content:center;
-    align-items:center;
+.information {
+    justify-content: center;
+    align-items: center;
 }
-.text{
+
+.text {
     font-size: 2ch;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10%;
 }
-.infoIcons{
-    margin-left:20%;
-    
+
+.infoIcons {
+    margin-left: 20%;
+
 
 }
-.mainfooter{
+
+.mainfooter {
     align-items: center;
     justify-content: space-between;
     background-color: #000;
     display: flex;
     padding: var(--spacing-gutter-large);
 }
-.mainfooter a{
+
+.mainfooter a {
     background-color: #000;
     text-decoration: none;
     color: #ffffff;
     font-size: 4em;
     transition: 1s;
 }
-.mainfooter a:hover{
+
+.mainfooter a:hover {
     color: rgb(85, 85, 85);
     transition: 1s;
-    
+
 }
-.button{
+
+.button {
     width: 40%;
     padding: 0.33%;
     color: #000;
     border-radius: 10px;
     background-color: rgb(138, 138, 138);
-    
+
 }
-.cardsRecipe{
-    
+
+.cardsRecipe {
+
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
 }
-.cardRecipe{
+
+.cardRecipe {
     margin-top: 5%;
     background-color: rgb(255, 255, 255);
-    width: 35%;
-    height:62vh;
+    width: 32%;
+    height: 72vh;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow:3px 3px 3px 3px black;
-    margin-bottom:5%;
-   
-}
-.cardRecipe a{
-    text-decoration: double;
-}
-.imageRecipe{
-    width: 100%;
-    height: 35%;
-    border-radius: 10px;
-}
-.cardRecipe #icon{
-    width:3.5%;
-    top: 30px;
-    position: relative;
-}
-.cardRecipe #icon2{
-    width:3.5%;
-    left: 200px;
-    position: relative;
-    bottom: 20px;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-bottom: 5%;
+
 }
 
-.cardRecipe #icon3{
-    width:3.5%;
-    position: relative;
-    left: 400px;
-    bottom: 70px;
+.cardRecipe a {
+    text-decoration: double;
 }
-.cardRecipe p{
-    position: relative;
-    right: 260px;  
-    
+
+.imageRecipe {
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
 }
-.cardRecipe .infoIcons{
-    margin-left:170px;
-}
-.cardRecipe .date{
+
+.cardRecipe #icon {
+    width: 3.5%;
+    top: 30px;
     position: relative;
+    right: 105px;
+}
+
+.cardRecipe #icon2 {
+    width: 3.5%;
+    left: 130px;
+    position: relative;
+    bottom: 12px;
+}
+
+.cardRecipe #icon3 {
+    width: 3.5%;
+    position: relative;
+<<<<<<< HEAD
+    left: 300px;
+    bottom: 55px;
+=======
     left: 200px;
     bottom: 50px;
 
+>>>>>>> 8391ebeaba93e3a5f753998af749dfc2268e058f
 }
-.cardRecipe #foodIcon{
+
+.cardRecipe p {
     position: relative;
-    bottom: 25px;
-    left: 40px;
+    right: 260px;
+
 }
-#category{
+
+.cardRecipe .infoIcons {
+    margin-left: 170px;
+}
+
+.cardRecipe .date {
+    position: relative;
+    right: 35px;
+    bottom: 33px;
+}
+
+.cardRecipe #foodIcon {
+    position: relative;
+    bottom: 75px;
+    left: 125px;
+}
+
+#category {
     color: #969696;
 }

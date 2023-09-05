@@ -4,11 +4,8 @@
 *.pyc
 __pycache__
 db.sqlite3
-media
 venv
 *.bak
-*.js
-*.css
 *.svg
 
 *.md
