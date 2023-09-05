@@ -154,15 +154,19 @@ img {
     align-items: center;
 }
 
-.text {
+.description {
     font-size: 2ch;
-    width: 80%;
-    margin-left: 10%;
+    text-align: start;
+    padding-left: 30px;
     margin-bottom: 10%;
+}
+.contDescrip{
+    width: 100%;
+   
 }
 
 .infoIcons {
-    margin-left: 20%;
+    margin-left: 15%;
 
 
 }
@@ -239,7 +243,7 @@ img {
 
 .cardRecipe #icon2 {
     width: 3.5%;
-    left: 130px;
+    left: 100px;
     position: relative;
     bottom: 12px;
 }
@@ -247,14 +251,10 @@ img {
 .cardRecipe #icon3 {
     width: 3.5%;
     position: relative;
-<<<<<<< HEAD
     left: 300px;
-    bottom: 55px;
-=======
-    left: 200px;
     bottom: 50px;
 
->>>>>>> 8391ebeaba93e3a5f753998af749dfc2268e058f
+
 }
 
 .cardRecipe p {
@@ -269,7 +269,7 @@ img {
 
 .cardRecipe .date {
     position: relative;
-    right: 35px;
+    right: 55px;
     bottom: 33px;
 }
 
@@ -281,4 +281,12 @@ img {
 
 #category {
     color: #969696;
+}
+.cardRecipe .description{
+ 
+    position: relative;
+    
+}
+#busca{
+    color: #000;
 }
