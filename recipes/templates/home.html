@@ -21,6 +21,8 @@
     <section class="cards">
       {% for recipe in recipes %}
         {% include 'card.html'%}
+        {% empty %}
+        <h1>No recipes found</h1>
       {% endfor %}
     
     </section>

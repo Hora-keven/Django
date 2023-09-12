@@ -96,7 +96,8 @@ a {
 
     padding: 0.33%;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 10px solid 'black';
+    
 }
 
 .image {

@@ -3,12 +3,12 @@ from .models import Recipe
 
 
 def contato(request):
-    recipes = Recipe.objects.all( ).order_by('-id')
+    recipes = Recipe.objects.filter( is_published=True).order_by('-id')
     return render(request, 'home.html', context={'recipes':recipes})
 
 
 def recipe(request, id):
-    recipes = Recipe.objects.filter(pk = id)
+    recipes = Recipe.objects.filter(pk = id, is_published=True)
     return render(request, 'recipe_view.html', context={'recipe':recipes, 'is_detail_page':True})
 
 
