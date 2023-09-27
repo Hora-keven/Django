@@ -24,4 +24,7 @@ def category(request, category_id):
         ).order_by('-id'))
     return render(request, 'category.html', context={'category':recipe})
 
+def search(request):
+    return render(request, 'recipe_view.html')
+
 

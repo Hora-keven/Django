@@ -31,3 +31,13 @@ class RecipeViewsTest(TestCase):
     def test_recipe_home_view_returns_404_if_not_recipes_found(self):
         response = self.client.get( resolve( reverse('recipes:category', kwargs={'category_id':1})))
         self.assertEqual(response.status_code, 404)
+        
+    def test_recipe_search_uses_correct_view_function(self):
+        url = reverse('recipes:search')
+   
+        resolved = resolve(url)
+        self.assertIs(resolved.func, views.search)
+        
+    def test_recipe_search_loads_correct_template(self):
+        response = self.client.get(reverse('recipes:search'))
+        self.assertTemplateUsed(response, 'recipe_category.html')
