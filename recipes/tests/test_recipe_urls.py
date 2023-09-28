@@ -19,3 +19,8 @@ class RecipeURLstest(TestCase):
     def test_recipe_search_is_correct(self):
          url = reverse('recipes:search')
          self.assertEqual(url, '/recipes/search/')
+
+    def test_recipe_search_raises_404_if_no_search_term(self):
+        url = reverse('recipes:search')
+        response= self.client.get(url)
+        self.assertEqual(response.status_code, 404)

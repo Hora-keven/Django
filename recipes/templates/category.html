@@ -1,4 +1,6 @@
+{% extends "home.html" %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,24 +10,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href='{% static './css/style.css' %}' />
   <title>
-      Recipe
+    {% block title %}Cards{% endblock title %}
   </title>
 </head>
 
 <body>
   {% include 'partial.html' %}
   <div class="container">
-    <section>
+    <h1>{{category.category}}</h1>
+    <section class="cards" style="margin-top: 3%;">
         {% for ct in category %}
-        <h1>{{ct}}</h1>
-        <div style="height: 50%;">
+      <div class="card">
+      
+        <div class="image">
             <img src="{{ ct.cover.url }}" alt="" />
-          </div>
-          {% endfor %}
-    <section class="cards">
-      {% for recipe in recipes %}
-        {% include 'card.html'%}
-      {% endfor %}
+        </div>
+        <h2>{{ct}}</h2>
+        <div class="description"><p>{{ct.description}}</p></div>
+      </div>
+
+       
+        {% endfor %}
+  
+     
     
     
     </section>

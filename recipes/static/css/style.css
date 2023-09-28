@@ -10,8 +10,9 @@ body {
     margin: 0;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100%;
+    height: auto;
     min-height: 100%;
+    background-color: rgb(240, 240, 240);
 }
 
 h1 {
@@ -45,6 +46,8 @@ p {
     margin-inline-end: 0px;
     font-size: 2ch;
     color: #969696;
+    padding: 0.1%;
+    margin-left: 1%;
 }
 
 input {
@@ -67,7 +70,7 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     column-gap: 5rem;
     row-gap: 4rem;
-
+    margin-top: 2%;
 }
 
 .card {
@@ -78,7 +81,7 @@ input {
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 15%;
-    box-shadow: 3px 3px 3px 3px black;
+    box-shadow: 3px 3px 3px 3px rgb(192, 192, 192);
 }
 
 .card:hover {
@@ -88,6 +91,7 @@ input {
 h3 {
     color: #000000;
     font-size: 3ch;
+    margin-bottom: 10%;
 }
 
 a {
@@ -100,21 +104,25 @@ a {
 
 .image {
     width: 100%;
-    border-radius: 10px;
-
+  
 }
 
 img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+
 
 }
 
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 3rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
     flex-direction: row;
+    color: #000;
+    margin-bottom: 10%;
+    
 }
 
 .date {
@@ -128,18 +136,19 @@ img {
 }
 
 .information {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     width: 100%;
+
     
 }
 
 .description {
     font-size: 2ch;
-    text-align: start;
+    text-align: center;
     padding-left: 30px;
-    margin-bottom: 10%;
+    margin-top: 10%;
 }
 .contDescrip{
     width: 100%;
@@ -150,7 +159,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+  
     width: 100%;
 
 
@@ -222,58 +231,37 @@ img {
     border-radius: 20px;
 }
 
-.cardRecipe #icon {
-    width: 3.5%;
-    top: 30px;
-    position: relative;
-    right: 105px;
+.cardRecipe .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
+    flex-direction: row;
+    color: #000;
+    margin-bottom: 10%;
+    
 }
 
-.cardRecipe #icon2 {
-    width: 3.5%;
-    left: 100px;
-    position: relative;
-    bottom: 12px;
-}
 
-.cardRecipe #icon3 {
-    width: 3.5%;
-    position: relative;
-    left: 300px;
-    bottom: 50px;
-
-
-}
-
-.cardRecipe p {
-    position: relative;
-    right: 260px;
-
-}
 
 .cardRecipe .infoIcons {
-    margin-left: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    width: 100%;
 }
 
-.cardRecipe .date {
-    position: relative;
-    right: 55px;
-    bottom: 33px;
-}
 
-.cardRecipe #foodIcon {
-    position: relative;
-    bottom: 75px;
-    left: 125px;
-}
-
-#category {
-    color: #969696;
-}
 .cardRecipe .description{
  
-    position: relative;
+    font-size: 2ch;
+    text-align: center;
+    padding-left: 30px;
+    margin-top: 10%;
     
+}
+#category{
+    color: gray;
 }
 #busca{
     color: #000;

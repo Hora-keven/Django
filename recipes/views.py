@@ -2,7 +2,7 @@ from django.shortcuts import render, get_list_or_404
 from .models import Recipe
 
 
-def contato(request):
+def home(request):
     recipes = Recipe.objects.filter( is_published=True).order_by('-id')
     return render(request, 'home.html', context={'recipes':recipes})
 
@@ -25,6 +25,10 @@ def category(request, category_id):
     return render(request, 'category.html', context={'category':recipe})
 
 def search(request):
-    return render(request, 'recipe_view.html')
+    dado = request.GET.get('dados')
+    
+    busca = Recipe.objects.filter(title=dado, is_published=True).order_by('id')
+    print(busca)
+    return render(request, 'home.html', {'dado':busca})
 
 
