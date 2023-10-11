@@ -21,8 +21,6 @@ from rest_framework import routers
 from EmployeeApp import views
 
 
-
-
 urlpatterns = [
     path('api/', include('EmployeeApp.urls')),
     path('admin/', admin.site.urls)
